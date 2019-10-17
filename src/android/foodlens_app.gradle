@@ -1,0 +1,3 @@
+dependencies{
+    implementation "com.doinglab.foodlens:FoodLens:2.0.6"
+}

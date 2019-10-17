@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-foodlens" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Foodlens</name>
+    <js-module name="Foodlens" src="www/Foodlens.js">
+        <clobbers target="cordova.plugins.Foodlens" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Foodlens">
+                <param name="android-package" value="cordova.plugin.foodlens.Foodlens" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application" mode="merge">
+            <meta-data android:name="com.doinglab.foodlens.sdk.accesstoken" android:value="dc76c8d0493411e9b4750800200c9a66" />
+        </config-file>
+        
+        
+        <source-file src="src/android/Foodlens.java" target-dir="src/cordova/plugin/foodlens" />
+        <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference"/>
+        
+    </platform>
+</plugin>
