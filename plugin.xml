@@ -30,12 +30,15 @@
 
     <platform name="ios">
         <!-- <plugins-plist key="Foo" string="CDVFoo" /> -->
-        <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >
+        <plugins-plist key="NSPhotoLibraryUsageDescription" string="Foodlens requires photo to analyze food consumption"/>
+        <plugins-plist key="NSCameraUsageDescription" string="Foodlens requires photo to analyze food consumption"/>
+
+        <!-- <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >
           <string>Foodlens requires photo to analyze food consumption</string>
         </edit-config>
         <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
             <string>Foodlens requires photo to analyze food consumption</string>
-        </edit-config>
+        </edit-config> -->
 
 
         <config-file parent="/*" target="config.xml">
