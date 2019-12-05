@@ -29,7 +29,7 @@
     </platform>
 
     <platform name="ios">
-        
+        <!-- <plugins-plist key="Foo" string="CDVFoo" /> -->
         <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >
           <string>Foodlens requires photo to analyze food consumption</string>
         </edit-config>
@@ -44,15 +44,18 @@
             </feature>
         </config-file>
         <source-file src="src/ios/Foodlens.swift" />
-
-        <!-- <podspec>
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2" />
+        <podspec>
             <config>
                 <source url="https://bitbucket.org/doing-lab/foodlenssdk-specs.git" />
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="FoodLens" spec="2.0.23"/>
+                <!-- <pod name="FoodLens" git="https://FoodLensUser@bitbucket.org/doing-lab/foodlenssdk_ios.git" tag = "2.0.24"/> -->
+                <pod name="FoodLens" spec="2.0.24"/>
             </pods>
-        </podspec> -->
+        </podspec>
+
     </platform>
 </plugin>
+SWIFT_VERSION=4.2 bash -c 'ionic cordova build ios'
