@@ -58,4 +58,3 @@
 
     </platform>
 </plugin>
-SWIFT_VERSION=4.2 bash -c 'ionic cordova build ios'
