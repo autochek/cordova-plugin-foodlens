@@ -17,17 +17,6 @@ allprojects{
     }
 }
 
-android {
-	compileSdkVersion 29
-	defaultConfig {
-        minSdkVersion 19
-    }
-    compileOptions {
-        sourceCompatibility = '1.8'
-        targetCompatibility = '1.8'
-    }
-}
-
 dependencies{
-    implementation "com.doinglab.foodlens:FoodLens:2.1.1"
+    implementation "com.doinglab.foodlens:FoodLens:2.0.6"
 }
