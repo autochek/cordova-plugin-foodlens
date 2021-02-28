@@ -24,7 +24,7 @@
         <config-file mode="merge" parent="/manifest/application" target="AndroidManifest.xml">
             <meta-data android:name="com.doinglab.foodlens.sdk.accesstoken" android:value="dc76c8d0493411e9b4750800200c9a66" />
         </config-file>
-        <source-file src="src/android/Foodlens.java" target-dir="src/cordova/plugin/foodlens" />
+        <source-file src="src/android/Foodlens.java" target-dir="src/cordova/plugins/foodlens" />
         <framework custom="true" src="src/android/build-extras.gradle" type="gradleReference" />
     </platform>
 
