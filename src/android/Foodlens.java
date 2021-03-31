@@ -1,4 +1,4 @@
-package cordova.plugin.foodlens;
+package cordova.plugins.foodlens;
 
 import android.content.Intent;
 import android.util.Log;
@@ -26,25 +26,12 @@ public class Foodlens extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if (action.equals("coolMethod")) {
-            String message = args.getString(0);
-            this.coolMethod(message, callbackContext);
-            return true;
-        }
         if (action.equals("launchFoodlensUI")) {
             this.launchFoodlensUI(callbackContext);
             return true;
         }
 
         return false;
-    }
-
-    private void coolMethod(String message, CallbackContext callbackContext) {
-        if (message != null && message.length() > 0) {
-            callbackContext.success("Echo from Coolmethod : "+message);
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
     }
 
     private UIService uis;
