@@ -18,5 +18,5 @@ allprojects{
 }
 
 dependencies{
-    implementation "com.doinglab.foodlens:FoodLens:2.2.1"
+    implementation "com.doinglab.foodlens:FoodLens:2.2.8"
 }
