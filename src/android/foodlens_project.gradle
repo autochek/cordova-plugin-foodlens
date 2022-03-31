@@ -1,19 +1,19 @@
-allprojects{
-    repositories{
-        maven {
-            credentials {
-                username "FoodLensUser"
-                password "vnemfpswm01@"
-            }
-            authentication{
-                basic(BasicAuthentication)
-            }
-            url "https://bitbucket.org/doing-lab/foodlenssdk-repo/raw/releases"
-        }
-        maven {
-            url "https://jitpack.io"
-        }
-
-    }
-}
-
+// allprojects{
+//     repositories{
+//         maven {
+//             credentials {
+//                 username "FoodLensUser"
+//                 password "vnemfpswm01@"
+//             }
+//             authentication{
+//                 basic(BasicAuthentication)
+//             }
+//             url "https://bitbucket.org/doing-lab/foodlenssdk-repo/raw/releases"
+//         }
+//         maven {
+//             url "https://jitpack.io"
+//         }
+//
+//     }
+// }
+//
