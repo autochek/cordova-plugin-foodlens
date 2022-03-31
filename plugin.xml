@@ -21,8 +21,13 @@
                 <param name="android-package" value="cordova.plugins.foodlens.Foodlens" />
             </feature>
         </config-file>
+
+		<config-file parent="/*" target="res/values/strings.xml">
+			<string name="foodlens_access_token">dc76c8d0493411e9b4750800200c9a66</string>
+		</config-file>
+
         <config-file mode="merge" parent="/manifest/application" target="AndroidManifest.xml">
-            <meta-data android:name="com.doinglab.foodlens.sdk.accesstoken" android:value="dc76c8d0493411e9b4750800200c9a66" />
+            <meta-data android:name="com.doinglab.foodlens.sdk.accesstoken" android:value="@string/foodlens_access_token" />
         </config-file>
         <source-file src="src/android/Foodlens.java" target-dir="src/cordova/plugins/foodlens" />
         <framework custom="true" src="src/android/build-extras.gradle" type="gradleReference" />
