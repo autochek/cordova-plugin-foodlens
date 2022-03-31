@@ -23,11 +23,13 @@
         </config-file>
 
 		<config-file parent="/*" target="res/values/strings.xml">
+			<string name="foodlens_access_token">dc76c8d0493411e9b4750800200c9a66</string>
 			<string name="foodlens_app_token">dc76c8d0493411e9b4750800200c9a66</string>
 			<string name="foodlens_company_token">a773e095563e4f67991c69d8fd1d5333</string>
 		</config-file>
 
         <config-file mode="merge" parent="/manifest/application" target="AndroidManifest.xml">
+			<meta-data android:name="com.doinglab.foodlens.sdk.accesstoken" android:value="@string/foodlens_access_token"/>
 			<meta-data android:name="com.doinglab.foodlens.sdk.apptoken" android:value="@string/foodlens_app_token"/>
 			<meta-data android:name="com.doinglab.foodlens.sdk.companytoken" android:value="@string/foodlens_company_token"/>
 		</config-file>
