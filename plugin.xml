@@ -63,7 +63,7 @@
             </config>
             <pods use-frameworks="true">
                 <!-- <pod name="FoodLens" git="https://FoodLensUser@bitbucket.org/doing-lab/foodlenssdk_ios.git" tag = "2.0.24"/> -->
-                <pod name="FoodLens" spec="2.4.8"/>
+                <pod name="FoodLens" spec="2.5.2"/>
             </pods>
         </podspec>
 
