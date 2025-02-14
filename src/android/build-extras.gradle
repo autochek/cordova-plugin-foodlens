@@ -1,6 +1,6 @@
 dependencies{
-    implementation "com.doinglab.foodlens:FoodLens:2.5.1"
-    implementation "com.mikhaellopez:circularimageview:3.0.2"
-    implementation "com.otaliastudios:cameraview:2.6.4"
+    implementation "com.doinglab.foodlens:FoodLens:2.6.4"
+    implementation "com.mikhaellopez:circularimageview:4.3.1"
+    implementation "com.otaliastudios:cameraview:2.7.2"
     
 }
