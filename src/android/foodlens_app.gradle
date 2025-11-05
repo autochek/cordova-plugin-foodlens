@@ -1,3 +1,7 @@
 dependencies{
-    implementation "com.doinglab.foodlens:FoodLens:2.2.8"
+    //implementation "com.doinglab.foodlens:FoodLens:2.2.8"
+    //When Using Core SDK Only
+   implementation "com.doinglab.foodlens:FoodLensSDK-core:3.0.9" 
+   //When Using UI SDK Together 
+   implementation "com.doinglab.foodlens:FoodLensSDK-ui:3.1.0"
 }
